@@ -1,0 +1,14 @@
+{
+  "label": "C/C++: g++.exe build active file",
+  "type": "shell",
+  "command": "C:/MinGW/bin/g++.exe",
+  "args": [
+    "-fdiagnostics-color=always",
+    "-g",
+    "${file}",
+    "-o",
+    "${fileDirname}/${fileBasenameNoExtension}.exe"
+  ],
+  "problemMatcher": ["$gcc"],
+  "group": { "kind": "build", "isDefault": true }
+}
