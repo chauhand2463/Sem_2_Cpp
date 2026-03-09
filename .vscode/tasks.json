@@ -1,14 +1,22 @@
 {
-  "label": "C/C++: g++.exe build active file",
-  "type": "shell",
-  "command": "C:/MinGW/bin/g++.exe",
-  "args": [
-    "-fdiagnostics-color=always",
-    "-g",
-    "${file}",
-    "-o",
-    "${fileDirname}/${fileBasenameNoExtension}.exe"
-  ],
-  "problemMatcher": ["$gcc"],
-  "group": { "kind": "build", "isDefault": true }
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "C:\\MinGW\\bin\\g++.exe",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-g3",
+        "-finput-charset=UTF-8",
+        "-fexec-charset=UTF-8",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/output/practical - 2/practical2_3.exe"
+      ],
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
 }
