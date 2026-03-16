@@ -9,14 +9,13 @@ private:
     double balance;
 
 public:
-    // Constructor
+   
     Wallet(int id, string name, double initialBalance = 0.0) {
         walletId = id;
         userName = name;
         balance = initialBalance;
     }
 
-    // Load money into wallet
     void loadMoney(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -26,7 +25,6 @@ public:
         }
     }
 
-    // Transfer money to another wallet
     void transferMoney(Wallet &receiver, double amount) {
         if (amount <= 0) {
             cout << "Invalid transfer amount.\n";
@@ -41,7 +39,6 @@ public:
         }
     }
 
-    // Display wallet details
     void displayDetails() const {
         cout << "Wallet ID: " << walletId << endl;
         cout << "User Name: " << userName << endl;
